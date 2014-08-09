@@ -1,3 +1,6 @@
+## PRE Introduction
+For this project I have included 5 R files, not 4.  As discussed in the forums, the 5th is a function called by the plotting routines to download and unzip the original data file, and store to a new file a subset of the original data.
+
 ## Introduction
 
 This assignment uses data from
