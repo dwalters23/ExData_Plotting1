@@ -2,6 +2,7 @@ explore_project1_plot1 <- function() {
     
     # Check if the subset data file has already been created
     #  If not, get the orig data file and do the subsetting
+    setwd("C:/Users/Dave/Documents/Davework/datascience/Graphing/")
     if (!file.exists("./explore_project1_out.csv")) {
         source("./load_explore_project1_data.R")
         load_explore_project1_data()

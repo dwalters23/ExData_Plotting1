@@ -22,7 +22,6 @@ load_explore_project1_data <- function() {
     meter$Date <- strptime(paste(meter$Date, meter$Time), "%d/%m/%Y %H:%M:%S")
     # Subset to lose the non 2007-2-1 and 2007-2-2 rows
     subsetMeter <- meter[grepl("2007-02-01|2007-02-02", meter$Date),]
-    print(str(subsetMeter))
     
     # Write to file
     write.csv(subsetMeter, file="./explore_project1_out.csv", na="NA")
